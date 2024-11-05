@@ -5,7 +5,6 @@ local change = false
 
 function getTime()
     lastTime =  VORPCore.Callback.TriggerAwait('hec-trainnotice:callback:gettime')
-    VORPCore.NotifyRightTip(lastTime, 4000)
 end
 
 -- Command to disable train notifications
