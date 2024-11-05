@@ -19,8 +19,6 @@ AddEventHandler("hec-trainnotice:checknotice", function(tm)
 
     local entries = MySQL.query.await("SELECT * FROM train_board WHERE entered > ?", { _tm })
 
-    print(#entries)
-
     -- Iterate through new train updates
     for i = 1, #entries do
         local _departing = ''
